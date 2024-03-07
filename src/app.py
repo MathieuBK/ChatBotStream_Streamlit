@@ -40,6 +40,7 @@ for message in st.session_state.chat_history:                       #2
         with st.chat_message("AI"):                                 #2
             st.markdown(message.content)                            #2
 
+# User Input
 user_query = st.chat_input("Your message")                          #2
 if user_query is not None and user_query != "":                     #2
     st.session_state.chat_history.append(HumanMessage(user_query))  #2 
